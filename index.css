@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .card1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: bir;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+  .card2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: ikki;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+
+  }
+  .card3 {
+    width: 150px;
+    height: 350px;
+    background-color: lime;
+    animation-name: uch;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+  .card4 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation-name: tort;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+  }
+  
+  @keyframes bir {
+    0% {
+      transform: rotate(360deg);
+    }
+    50% {
+      transform: rotate(3600deg);
+    }
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+  @keyframes ikki {
+    0% {
+      transform: scale(0.6);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.6);
+    }
+  }
+  @keyframes uch {
+    0% {
+         background-color: blue;
+    }
+    50% {
+      background-color: coral;
+    }
+    100% {
+     background-color: deeppink;
+    }
+  }
+  @keyframes tort {
+    0% {
+      transform: skew(30deg);
+    }
+    50% {
+        transform: skew(-30deg);
+    }
+    100% {
+        transform: skew(30deg);
+    }
+  }
